@@ -1,0 +1,44 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "path": {
+            "type": "object",
+            "properties": {
+                "laravel": {
+                    "type": "object",
+                    "properties": {
+                        "command": {
+                            "type": "string"
+                        },
+                        "helper": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "command",
+                        "helper"
+                    ]
+                },
+                "react": {
+                    "type": "object",
+                    "properties": {
+                        "utils": {
+                            "type": "string"
+                        }
+                    },
+                    "required": [
+                        "utils"
+                    ]
+                }
+            },
+            "required": [
+                "laravel",
+                "react"
+            ]
+        }
+    },
+    "required": [
+        "path"
+    ]
+}
